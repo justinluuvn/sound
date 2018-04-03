@@ -1,4 +1,10 @@
 //header file for processing sound (WAV) file.
+
+//#define DEBUG
+
+//constants definition
+#define SAMPLERATE 16000
+#define ESC 0x1b
 //define the wav header
 typedef struct {
 	char chunkID[4]; // "RIFF"
