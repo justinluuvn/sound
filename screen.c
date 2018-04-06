@@ -2,7 +2,7 @@
 //setColor(), etc
 #include "screen.h"
 #include <stdio.h>
-
+#include "comm.h"
 void clearScreen(void)
 {
         printf("%c[2J", ESC);

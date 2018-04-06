@@ -33,9 +33,9 @@ void sendToServer(double r80[])
 	   /* First set the URL that is about to receive our POST. This URL can
 	           just as well be a https:// URL if that is what should receive the
 	                  data. */
-		curl_easy_setopt(curl, CURLOPT_URL, "http://www.cc.puv.fi/~e1700674/testcur1.php");
+		curl_easy_setopt(curl, CURLOPT_URL, URL);
 	                          /* Now specify the POST data */
-		printf("what the fuck");
+		//printf("what the fuck");
 	    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, post);
 	                                  /* Perform the request, res will get the return code */
 	    res = curl_easy_perform(curl);

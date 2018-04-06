@@ -1,7 +1,7 @@
 #include "sound.h"
 #include <stdio.h>
 #include <math.h>
-
+#include "comm.h"
 // function definition of displayBar()
 // this function opens the "test.wav" file and reads the second part (data) of
 // the file. The samples should be in S16_LE format, and there are 16000 of them
@@ -41,6 +41,10 @@ void displayBar(char filename[])
 		bar(i, dB);
 #endif
 	} // for
+#ifdef COMM		//conditional compilation
+	sendToServer(rms_80);
+#endif
+	gotoxy(0,0);
  	printf("%c[1;%dm",ESC,37);
 	fflush(stdout);
 	printf("%s   ", filename);
@@ -52,7 +56,7 @@ void displayBar(char filename[])
 	printf("SR = %d   ", myhdr.sampleRate);
  	printf("%c[1;%dm",ESC,35);
 	fflush(stdout);
-	printf("dur = 1s\n");
+	printf("dur = %ds\n", myhdr.subChunk2Size/(myhdr.sampleRate*myhdr.bitsPerSample/8));
  	printf("%c[1;%dm",ESC,37);
 	fflush(stdout);
 
