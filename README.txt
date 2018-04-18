@@ -51,7 +51,11 @@ Table of content
 	i) sound.php
 		This file is stored in the server so as to process the data received from the pi and display to the user
 5. License
-		
+	Raspberry Pi is a trademark of the Raspberry Pi Foundation.
+	The Bluetooth word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such
+	marks by Raspberry Pi Trading Ltd is under license. 
+	Other trademarks and trade names are those of their respective owners.
+	The person mentioned in the contact information content has the copyright for the code, and Mr. Gao Chao greatly assisted in the making.		
 6. Contact information
 	Tin Luu,
 	Department of Information Technology
