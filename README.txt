@@ -5,6 +5,14 @@ Electronics, Inc. Audio Adapter) and a microphone. The sound is received at 1600
 RMS values as a bar-diagram.
 
 Table of content
+
+1. Confiuration
+2. Installation
+3. Operation
+4. Manifest
+5. Copyright and License
+6. Contact Information
+
 1. Configuration
 	This project makes use of several devices which are listed below:
 	a) One Raspberry Pi 3 device.
@@ -50,13 +58,13 @@ Table of content
 		This file sets the rule for the compilation of the code and several other actions
 	i) sound.php
 		This file is stored in the server so as to process the data received from the pi and display to the user
-5. License
+5. Copyright and License
 	Raspberry Pi is a trademark of the Raspberry Pi Foundation.
 	The Bluetooth word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such
 	marks by Raspberry Pi Trading Ltd is under license. 
 	Other trademarks and trade names are those of their respective owners.
 	The person mentioned in the contact information content has the copyright for the code, and Mr. Gao Chao greatly assisted in the making.		
-6. Contact information
+6. Contact Information
 	Tin Luu,
 	Department of Information Technology
 	Vaasa University of Applied Sciences

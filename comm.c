@@ -3,10 +3,14 @@
 #include <curl/curl.h>	// libcurl
 #include <math.h>
 
-//this function take in RMS values of 1 second, each calculated by 16000/80=200
-//samples, but the functions will be re-calculate 8 pieces of RMS values, each
-//corresponding to 2000 samples or 125ms of sound
-
+/*
+	Function definition of sendToServer()
+	this function take in RMS values of 1 second, each calculated by 16000/80=200
+	samples, but the functions will be re-calculate 8 pieces of RMS values, each
+	corresponding to 2000 samples or 125ms of sound
+	Input argument: double r[80] (the 80 pieces of rms value)
+	Output argument: none 
+*/
 void sendToServer(double r80[])
 {
 	double r8[8], sum;
@@ -30,19 +34,19 @@ void sendToServer(double r80[])
 	curl = curl_easy_init();
 	if(curl)
 	{
-	   /* First set the URL that is about to receive our POST. This URL can
-	           just as well be a https:// URL if that is what should receive the
-	                  data. */
+		/* First set the URL that is about to receive our POST. This URL can
+        just as well be a https:// URL if that is what should receive the
+	    data. */
 		curl_easy_setopt(curl, CURLOPT_URL, URL);
-	                          /* Now specify the POST data */
-		//printf("what the fuck");
+	    /* Now specify the POST data */
+
 	    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, post);
-	                                  /* Perform the request, res will get the return code */
+	    /* Perform the request, res will get the return code */
 	    res = curl_easy_perform(curl);
-	                                          /* Check for errors */
+	    /* Check for errors */
 	    if(res != CURLE_OK)
 	    	fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
-	                                                                      /* always cleanup */
+	    /* always cleanup */
 	    curl_easy_cleanup(curl);
 	}
 	curl_global_cleanup();
