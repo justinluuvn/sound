@@ -1,6 +1,6 @@
 # ------------------------------------------------SOUND SENSOR PROJECT------------------------------------------------------------------ 
 
-This project is meant to collect sound levle at a proximity of a Raspberry Pi device. The RPI is equippeed with a USB sound card (C-Media 
+This project is meant to collect sound level at a proximity of a Raspberry Pi device. The RPI is equippeed with a USB sound card (C-Media 
 Electronics, Inc. Audio Adapter) and a microphone. The sound is received at 16000Hz sample rate and every second will produce 80 pieces of 
 RMS values as a bar-diagram.
 
