@@ -32,7 +32,7 @@ Table of content
 3. Operation
 	a) Open the Putty terminal, enter the IP address received in the email and then click "Open".
 	b) Log in to the device using the name "pi" and accompanying password.
-	c) Go to the "appdev" folder by utilizing the command "cd" and then check the presence of all the files by the command "ls".
+	c) Go to the "appdev" and then the "drawing" folder by utilizing the command "cd" and then check the presence of all the files by the command "ls".
 	d) Type in the command "make" to start the compilation process.
 	e) Run the command "./sound.a" to start executing the resulting file.
 	f) Using the microphone, start recording the sequence of 1-second WAV files. For each file, the program will calculate the rms value for 
